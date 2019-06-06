@@ -1,0 +1,50 @@
+{
+    "index": "/index.html",
+    "assetGroups": [
+      {
+        "name": "angular-pwa",
+        "installMode": "prefetch",
+        "updateMode": "prefetch",
+        "resources": {
+          "files": [
+            "/index.html",
+            "/pwa-manifest.json",
+            "/assets/images/favicons/favicon.ico",
+            "/assets/js/*.js",
+            "/*.css",
+            "/*.js"
+          ],
+          "urls": [
+            "https://fonts.googleapis.com/**",
+            "https://fonts.gstatic.com/s/**"
+          ]
+        }
+      },
+      {
+        "name": "assets-eager",
+        "installMode": "prefetch",
+        "updateMode": "prefetch",
+        "resources": {
+          "files": [
+            "/assets/images/**",
+            "!/assets/images/favicons/**",
+            "!/**/_unused/**"
+          ]
+        }
+      },
+      {
+        "name": "assets-lazy",
+        "installMode": "lazy",
+        "updateMode": "prefetch",
+        "resources": {
+          "files": [
+            "/assets/images/favicons/**",
+            "!/**/_unused/**"
+          ]
+        }
+      }
+    ],
+    "navigationUrls": [
+      "/**"
+    ]
+  }

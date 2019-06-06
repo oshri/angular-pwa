@@ -6,9 +6,46 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="icon" type="image/x-icon" href="assets/images/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="assets/images/favicons/favicon-32x32.png"
+        sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/images/favicons/favicon-194x194.png"
+        sizes="194x194">
+  <link rel="icon" type="image/png" href="assets/images/favicons/favicon-96x96.png"
+        sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/images/favicons/favicon-16x16.png"
+        sizes="16x16">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/favicon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicons/favicon-144x144.png">
+
+  <!-- NOTE: These need to be kept in sync with `ngsw-config.json`. -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+  <!-- -->
+
+  <link rel="manifest" href="pwa-manifest.json">
+  <meta name="theme-color" content="#a829c3">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+
+  <script>
+    tag = document.createElement('meta'); tag.name = 'robots'; tag.content = 'noindex';
+    document.head.appendChild(tag);
+  </script>
 </head>
 <body>
   <app-root></app-root>
+  <noscript>
+    <div class="background-sky hero"></div>
+    <section id="intro">
+      <div class="hero-logo">
+        <img src="assets/images/badge.svg" width="250" height="250">
+      </div>
+    </section>
+    <h2 style="color: red; text-align: center; margin-top: -50px;">
+      <b><i>This website requires JavaScript.</i></b>
+    </h2>
+  </noscript>
 </body>
 </html>
