@@ -89,7 +89,7 @@ jobs:
           name: Build App
           command: yarn build
 
-      -run:
+      - run:
           name: Set github details
           command: npx ngh --repo=https://$TOKEN@github.com/oshri/angular-pwa.git --no-silent
 
