@@ -9,16 +9,14 @@ import { SwUpdatesModule } from './modules/swUpdates';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SwUpdatesModule,
-    ServiceWorkerModule.register('/angular-pwa/ngsw-worker.js', {enabled: environment.production}),
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [AppComponent],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		SwUpdatesModule,
+		ServiceWorkerModule.register('/angular-pwa/ngsw-worker.js', { enabled: environment.production })
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

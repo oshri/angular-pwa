@@ -1,7 +1,6 @@
 {
   "rulesDirectory": [
-    "node_modules/codelyzer",
-    "node_modules/vrsource-tslint-rules/rules"
+    "node_modules/codelyzer"
   ],
   "rules": {
     "callable-types": true,
@@ -15,7 +14,7 @@
     "forin": true,
     "import-blacklist": true,
     "import-spacing": true,
-    "indent": [true, "spaces"],
+    "indent": [true, "tabs"],
     "interface-over-type-literal": true,
     "label-position": true,
     "max-line-length": [true, 140],

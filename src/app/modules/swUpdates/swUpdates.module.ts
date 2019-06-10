@@ -3,6 +3,6 @@ import { NgModule } from '@angular/core';
 import { SwUpdatesService } from './services/swUpdates/swUpdates.service';
 
 @NgModule({
-  providers: [SwUpdatesService],
+	providers: [SwUpdatesService]
 })
 export class SwUpdatesModule {}
