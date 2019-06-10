@@ -17,6 +17,10 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+			"@app-core/*": ["src/app/modules/core/*"],
+			"@app-type": ["src/types"]
+		}
   }
 }
