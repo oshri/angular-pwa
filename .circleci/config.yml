@@ -67,9 +67,28 @@ jobs:
       - image: circleci/node:10.12
     steps:
       - checkout
+      - attach_workspace:
+          at: ~/repo/tmp
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "yarn.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Install yarn
+          command: yarn
+
       - run:
           name: Deploy to github pages
           command: yarn deploy
+          
       - run:
           command: ngh --token $TOKEN
 workflows:
