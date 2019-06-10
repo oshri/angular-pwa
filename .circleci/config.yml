@@ -63,7 +63,8 @@ jobs:
       - run: yarn lint
 
   deploy-job:
-    machine: true
+    docker:
+      - image: circleci/node:10.12
     steps:
       - checkout
       - run:
