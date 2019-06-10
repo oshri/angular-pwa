@@ -86,9 +86,13 @@ jobs:
           command: yarn
 
       - run:
+          name: Build App
+          command: yarn build
+
+      - run:
           name: Deploy to github pages
           command: yarn deploy
-          
+
       - run:
           command: ngh --token $TOKEN
 workflows:
