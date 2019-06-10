@@ -36,7 +36,7 @@ jobs:
       - run:
           name: Run frontend unit tests
           command: |
-            yarn run test:ci
+            yarn test
   lint-job:
     docker:
       - image: circleci/node:10.12
