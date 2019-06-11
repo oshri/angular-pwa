@@ -95,12 +95,7 @@ jobs:
               echo -e "Starting to deploy to Github Pages\n"
               git config --global user.email "cms.x.seo@gmail.com"
               git config --global user.name "oshri"
-              npx ngh --repo=https://$GH_TOKEN@github.com/oshri/angular-pwa.git --no-silent
-              
-
-      - run:
-          name: Deploy to github pages
-          command: yarn deploy
+              npx angular-cli-ghpages --repo=https://$GH_TOKEN@github.com/oshri/angular-pwa.git --name="Oshri" --email=cms.x.seo@gmail.com --no-silent
 
 workflows:
   version: 2
