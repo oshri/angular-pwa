@@ -16,16 +16,16 @@ describe('AppComponent', () => {
 		expect(app).toBeTruthy();
 	});
 
-	it(`should have as title 'Angular PWA deploy in github pages!!'`, () => {
+	it(`should have as title 'Angular PWA deploy in github pages!! 2'`, () => {
 		const fixture = TestBed.createComponent(AppComponent);
 		const app = fixture.debugElement.componentInstance;
-		expect(app.title).toEqual('Angular PWA deploy in github pages!!');
+		expect(app.title).toEqual('Angular PWA deploy in github pages!! 2');
 	});
 
 	it('should render title in a h1 tag', () => {
 		const fixture = TestBed.createComponent(AppComponent);
 		fixture.detectChanges();
 		const compiled = fixture.debugElement.nativeElement;
-		expect(compiled.querySelector('h1').textContent).toContain('Welcome to Angular PWA deploy in github pages!!!');
+		expect(compiled.querySelector('h1').textContent).toContain('Welcome to Angular PWA deploy in github pages!! 2');
 	});
 });
