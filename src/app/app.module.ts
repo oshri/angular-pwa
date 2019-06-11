@@ -6,17 +6,19 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppRoutingModule } from './app-routing.module';
 
 import { SwUpdatesModule } from './modules/swUpdates';
-import { AppComponent } from './app.component';
+import { CoreModule } from '@app-core/index';
+import { AppComponent } from '@app-core/containers/app/app.component';
+import { GaService } from '@app-core/services/googleAnalytics/googleAnalytics.service';
 
 @NgModule({
-	declarations: [AppComponent],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
+		CoreModule,
 		SwUpdatesModule,
 		ServiceWorkerModule.register('/angular-pwa/ngsw-worker.js', { enabled: environment.production })
 	],
-	providers: [],
+	providers: [GaService],
 	bootstrap: [AppComponent]
 })
 export class AppModule {}

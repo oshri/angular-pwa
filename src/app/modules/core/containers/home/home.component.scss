@@ -1,0 +1,14 @@
+:host {
+    .app-home {
+        
+        &__title{
+            text-align: center;
+        }
+
+        &__img{
+            width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

@@ -14,7 +14,7 @@
       }
     ],
     "start_url": "https://oshri.github.io/angular-pwa/",
-    "background_color": "#a829c3",
-    "theme_color": "#a829c3",
+    "background_color": "#3E00FF",
+    "theme_color": "#3E00FF",
     "display": "standalone"
   }
