@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "npx angular-cli-ghpages --dir=dist/angular-pwa --no-silent",
+    "deploy2": "npx angular-cli-ghpages --dir=dist/angular-pwa --repo=https://oshri@github.com/oshri/angular-pwa.git --name=Oshri --email=cms.x.seo@gmail.com --no-silent",
     "prettier": "prettier --config prettier.config.js",
     "precommit": "lint-staged"
   },
