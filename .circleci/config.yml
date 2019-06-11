@@ -89,9 +89,15 @@ jobs:
           name: Build App
           command: yarn build
 
+      #- run:
+      #    name: Set github details
+      #    command: npx ngh --repo=https://$TOKEN@github.com/oshri/angular-pwa.git --no-silent
+
       - run:
-          name: Set github details
-          command: npx ngh --repo=https://$TOKEN@github.com/oshri/angular-pwa.git --no-silent
+          name: 
+          command: |
+            git config --global user.email cms.x.seo@gmail.com
+            git config --global user.name oshri
 
       - run:
           name: Deploy to github pages
