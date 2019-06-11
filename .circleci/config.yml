@@ -95,7 +95,7 @@ jobs:
               echo -e "Starting to deploy to Github Pages\n"
               git config --global user.email "cms.x.seo@gmail.com"
               git config --global user.name "oshri"
-              npx ngh --repo=https://$TOKEN@github.com/oshri/angular-pwa.git --no-silent
+              npx ngh --repo=https://$GH_TOKEN@github.com/oshri/angular-pwa.git --no-silent
               
 
       - run:
