@@ -1,5 +1,9 @@
 # AngularPwa
 
+Angular PWA (Progresive Web App) deploy on Github pages. power by CircleCi build and deploy
+
+[![CircleCI](https://circleci.com/gh/oshri/workflows/angular-pwa/tree/master.svg?style=shield)](https://circleci.com/gh/oshri/workflows/angular-pwa/tree/master)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development server
