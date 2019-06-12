@@ -1,0 +1,20 @@
+{
+    "short_name": "NgPwa",
+    "name": "NgPwa",
+    "icons": [
+      {
+        "src": "assets/images/favicons/favicon-194x194.png",
+        "sizes": "194x194 512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/images/favicons/favicon-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "https://oshri.github.io/angular-pwa/",
+    "background_color": "#3E00FF",
+    "theme_color": "#3E00FF",
+    "display": "standalone"
+  }
