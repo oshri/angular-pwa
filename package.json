@@ -26,6 +26,13 @@
       "pre-commit": "npm run precommit && npm run lint"
     }
   },
+  "keywords": [
+    "pwa",
+    "angular",
+    "github pages",
+    "circleci"
+  ],
+  "author": "Oshri Kdoshim <cms.x.seo@gmail.com>",
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.2.0",
